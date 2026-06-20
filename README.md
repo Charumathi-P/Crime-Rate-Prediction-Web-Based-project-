@@ -1,5 +1,3 @@
-Sample HTML (index.html)
-
 <!DOCTYPE html>
 
 <html>
