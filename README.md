@@ -1,152 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Crime Rate Prediction System</title>
+# Clap Switch Circuit Using Discrete Components
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f4f4f4;
-            text-align:center;
-            padding-top:50px;
-        }
+## Description
 
-        .container{
-            width:450px;
-            margin:auto;
-            background:white;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.2);
-        }
+A clap-activated switch designed and built using discrete electronic components such as transistors, resistors, capacitors, a condenser microphone, and a 9V battery. The circuit detects clap sounds through the microphone, amplifies the signal using transistor stages, and activates an LED output. This project demonstrates sound-based automation without the use of microcontrollers or Arduino.
 
-        h1{
-            color:#333;
-        }
+## Features
 
-        input{
-            width:80%;
-            padding:10px;
-            margin:10px;
-            border:1px solid #ccc;
-            border-radius:5px;
-        }
+* Built entirely with discrete electronic components
+* Clap sound detection using a condenser microphone
+* Transistor-based signal amplification and switching
+* LED output indication
+* Portable 9V battery-powered operation
+* Hand-assembled PCB with through-hole components
+* Demonstrates analog sound detection and automation concepts
 
-        button{
-            padding:10px 20px;
-            background:#007bff;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-        }
+## Components Used
 
-        button:hover{
-            background:#0056b3;
-        }
+* Condenser Microphone
+* BC547/Equivalent Transistors
+* Resistors
+* Capacitors
+* LED
+* 9V Battery
+* PCB Board
+* Connecting Wires
 
-        #result{
-            margin-top:20px;
-            font-size:22px;
-            font-weight:bold;
-        }
+## Skills Demonstrated
 
-        table{
-            width:100%;
-            margin-top:20px;
-            border-collapse:collapse;
-        }
+* Basic Electronics
+* Circuit Design
+* PCB Assembly
+* Soldering
+* Analog Signal Processing
+* Sound Detection Logic
+* Hardware Testing and Troubleshooting
 
-        th,td{
-            border:1px solid #ddd;
-            padding:8px;
-        }
+## Applications
 
-        th{
-            background:#007bff;
-            color:white;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <h1>Crime Rate Prediction System</h1>
-
-    <input type="text"
-           id="location"
-           placeholder="Enter Location">
-
-    <input type="number"
-           id="crimeCount"
-           placeholder="Enter Previous Crime Count">
-
-    <br>
-
-    <button onclick="predictCrime()">
-        Predict Crime Rate
-    </button>
-
-    <h2 id="result"></h2>
-
-    <table>
-        <tr>
-            <th>Location</th>
-            <th>Crime Count</th>
-            <th>Prediction</th>
-        </tr>
-        <tbody id="crimeTable"></tbody>
-    </table>
-
-</div>
-
-<script>
-
-function predictCrime()
-{
-    let location =
-    document.getElementById("location").value;
-
-    let crime =
-    parseInt(document.getElementById("crimeCount").value);
-
-    if(location === "" || isNaN(crime))
-    {
-        alert("Please enter all details");
-        return;
-    }
-
-    let prediction;
-
-    if(crime < 50)
-    {
-        prediction = "Low Crime Risk";
-    }
-    else if(crime < 100)
-    {
-        prediction = "Medium Crime Risk";
-    }
-    else
-    {
-        prediction = "High Crime Risk";
-    }
-
-    document.getElementById("result").innerHTML =
-    prediction;
-
-    let row =
-    "<tr>" +
-    "<td>" + location + "</td>" +
-    "<td>" + crime + "</td>" +
-    "<td>" + prediction + "</td>" +
-    "</tr>";
-
-    document.getElementById("crimeTable").innerHTML += row;
-}
-
-</script>
-
-</body>
-</html>
+* Sound-Activated Switching
+* Basic Home Automation Concepts
+* Educational Electronics Projects
+* Signal Amplification Demonstration
