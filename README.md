@@ -1,27 +1,3 @@
-Crime-Rate-Prediction/
-│
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-│
-├── Backend/
-│   ├── HomeController.cs
-│   ├── CrimePredictionController.cs
-│   └── Database.cs
-│
-├── Models/
-│   ├── CrimeData.cs
-│   └── PredictionModel.cs
-│
-├── Database/
-│   └── CrimeDB.sql
-│
-└── ML/
-└── CrimePredictionModel.cs
-
----
-
 Sample HTML (index.html)
 
 <!DOCTYPE html>
